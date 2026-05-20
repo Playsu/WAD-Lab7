@@ -22,7 +22,9 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew build
-      # TODO: Run backend tests in the pipeline
+
+      - name: Run backend tests
+        run: ./gradlew test
 
       # TODO: Run the Jacoco report in the pipeline (Jacoco already exists)
 
